@@ -1,33 +1,45 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Dashboard from './components/Dashboard.jsx'
+import Documentries from './components/Documentries.jsx'
+import Book from './components/Book.jsx'
+import ResearchPaper from './components/ResearchPaper.jsx'
+import ShortFilm from './components/ShortFilm.jsx'
+import Settings from './components/Settings.jsx'
+import { Link } from 'react-router-dom';
+
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
+    <Router>
       <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        <Link to='/' > DashBoard </Link>
+        <Link to='/book' > Books </Link>
+        <Link to='/documentries' > Documentries </Link>
+        <Link to='/short-film' > ShortFilms </Link>
+        <Link to='/research-paper' > Reasearcg Papers </Link>
+        <Link to='/settings' > Settings </Link>
+        <Link to='/library' > Libarary </Link>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Switch>
+        <Route path='/' exact component={ Dashboard } />
+
+        <Route path='/documentries' Component={ Documentries } />
+
+        <Route path='/book' Component={ Book } />
+
+        <Route path='/short-film' Component={ ShortFilm } />
+
+        <Route path='/research-paper' Component={ ResearchPaper } />
+
+        <Route path='/settings' Component={ Settings } />
+
+        <Route path='/library' Component={ Library } />
+
+      </Switch>
+    </Router>
+      
     </>
   )
 }
