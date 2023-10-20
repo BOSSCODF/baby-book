@@ -18,8 +18,28 @@ const router = createBrowserRouter([
   },
   {
     path: "/books",
-    element:<Book/>
-  }
+    element:<Book/>,
+  },
+  {
+    path: "/documentaries",
+    element:<Book/>,
+  },
+  {
+    path: "/shortfilm",
+    element:<Book/>,
+  },
+  {
+    path: "/researchpaper",
+    element:<Book/>,
+  },
+  {
+    path: "/library",
+    element:<Book/>,
+  },
+  {
+    path: "/settings",
+    element:<Book/>,
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

@@ -22,11 +22,19 @@ const Dashboard = () => {
             <div className='w-[20rem] h-[4rem] text-xl flex justify-center items-center font-semibold text-zinc-700 hover:bg-green-200'><NavLink to="/books">
               Books
             </NavLink></div>
-            <div className='w-[20rem] h-[4rem] text-xl flex justify-center items-center font-semibold text-zinc-700 hover:bg-green-200'>Documentries</div>
-            <div className='w-[20rem] h-[4rem] text-xl flex justify-center items-center font-semibold text-zinc-700 hover:bg-green-200'>Shortfilms</div>
-            <div className='w-[20rem] h-[4rem] text-xl flex justify-center items-center font-semibold text-zinc-700 hover:bg-green-200'>ResearchPapers</div>
-            <div className='w-[20rem] h-[4rem] text-xl flex justify-center items-center font-semibold text-zinc-700 hover:bg-green-200'>Library</div>
-            <div className='w-[20rem] h-[4rem] text-xl flex justify-center items-center font-semibold text-zinc-700 hover:bg-green-200'>Settings</div>
+            <div className='w-[20rem] h-[4rem] text-xl flex justify-center items-center font-semibold text-zinc-700 hover:bg-green-200'><NavLink to="/documentaries">
+              Documentiries
+            </NavLink></div>
+            <div className='w-[20rem] h-[4rem] text-xl flex justify-center items-center font-semibold text-zinc-700 hover:bg-green-200'><NavLink to="/shortfilm">
+              Short Films
+            </NavLink></div>
+            <div className='w-[20rem] h-[4rem] text-xl flex justify-center items-center font-semibold text-zinc-700 hover:bg-green-200'><NavLink to="/researchpaper">
+              Research Papers
+            </NavLink></div>
+            <div className='w-[20rem] h-[4rem] text-xl flex justify-center items-center font-semibold text-zinc-700 hover:bg-green-200'><NavLink to="/library">
+              Library
+            </NavLink></div>
+            <div className='w-[20rem] h-[4rem] text-xl flex justify-center items-center font-semibold text-zinc-700 hover:bg-green-200'><NavLink to="/settings"></NavLink>Settings</div>
 
           </div>
         </div>
