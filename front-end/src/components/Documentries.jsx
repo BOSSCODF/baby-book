@@ -1,12 +1,12 @@
 import React from 'react'
-import Dashboard from './Dashboard'
 import img from '../assets/searchlogo.svg'
+import Sidebar from '../constants/Sidebar'
 
 const Documentries = () => {
   return (
     <>
-   <Dashboard></Dashboard>
-   <div className='bg-slate-100 h-screen w-[106.55rem] absolute left-[20rem] top-[16vh] p-[6rem] grid grid-cols-1'>
+   <Sidebar></Sidebar>
+   <div className='bg-slate-100 h-screen w-[106.55rem] absolute left-[20rem] top-[16vh] px-[6rem] grid grid-cols-1'>
 
     <div className='flex items-center'>
       <div className='w-[5rem] h-[3rem] bg-white flex items-center justify-center rounded-l-full'>

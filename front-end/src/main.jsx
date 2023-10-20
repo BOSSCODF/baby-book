@@ -1,8 +1,9 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom/client";
-import App from './App.jsx'
 import './index.css'
 import Dashboard from './components/Dashboard'
+import Documentries from './components/Documentries'
+import ShortFilm from "./components/ShortFilm";
 
 
 import {
@@ -10,6 +11,10 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Book from "./components/Book.jsx";
+import ResearchPaper from "./components/ResearchPaper";
+import Library from "./components/Library";
+import Settings from './components/Settings'
+import Upload from "./components/Upload";
 
 const router = createBrowserRouter([
   {
@@ -22,23 +27,27 @@ const router = createBrowserRouter([
   },
   {
     path: "/documentaries",
-    element:<Book/>,
+    element:<Documentries/>,
   },
   {
     path: "/shortfilm",
-    element:<Book/>,
+    element:<ShortFilm/>,
   },
   {
     path: "/researchpaper",
-    element:<Book/>,
+    element:<ResearchPaper/>,
   },
   {
     path: "/library",
-    element:<Book/>,
+    element:<Library/>,
   },
   {
     path: "/settings",
-    element:<Book/>,
+    element:<Settings/>,
+  },
+  {
+    path: "/uploadebook",
+    element:<Upload/>,
   },
 ]);
 
